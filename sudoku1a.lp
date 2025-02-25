@@ -7,6 +7,7 @@
 % Define numbers and positions
 num(1..4).
 pos(1..4).
+sudoku(X,Y,N) :- initial(X,Y,N).
 
 % Each cell (X, Y) contains exactly one number
 1 { sudoku(X, Y, N) : num(N) } 1 :- pos(X), pos(Y).
